@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'tachyons';
+//
+//import CardList from './CardList'
+import App from './containers/App'
+import Header from './components/Header'
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+// ReactDOM.render(<h1>Hello React!!</h1>,
+//   document.getElementById('root')
+// );
+
+ReactDOM.render(<App/>,document.getElementById('root'));
+ReactDOM.render(<Header />,document.getElementById('header'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
